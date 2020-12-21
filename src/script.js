@@ -170,7 +170,7 @@ function guiInit () {
 	// Указать, где следим, за чем следим.
 	cameraFolder.add(app.camera, 'offsetX').listen()
 	cameraFolder.add(app.camera, 'offsetY').listen()
-	cameraFolder.add(app.camera, 'scale').listen()
+	cameraFolder.add(app.camera, 'scale', 0.4, 20).listen()
 	cameraFolder.open()
 
 	// const messages = {
